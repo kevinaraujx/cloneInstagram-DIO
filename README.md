@@ -5,4 +5,4 @@
 
 # Ferramentas
  - HTML5
- - CSS3 (Flexbox, responsividade)
+ - CSS3 (Flexbox, Responsividade)
