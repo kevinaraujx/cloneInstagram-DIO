@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #fafafa;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 40px;
+}
+
+.contentbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    padding: 60px;
+    width: 22rem;
+    height: 23rem;
+}
+
+.logo img {
+    position: relative;
+    bottom: 20px;
+    width: 180px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input1 {
+    padding: 10px;
+    width: 17rem;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    background: #fafafa;
+    margin-bottom: 10px;
+}
+
+.input1::placeholder {
+    font-size: 12px;
+}
+
+.input1:focus {
+    border: 1px solid #d3d3d3;
+    outline: 0;
+}
+
+.input2 {
+    padding: 10px;
+    width: 17rem;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    background: #fafafa;
+}
+
+.input2::placeholder {
+    font-size: 12px;
+}
+
+.input2:focus {
+    border: 1px solid #d3d3d3;
+    outline: 0;
+}
+
+.entrar {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    width: 17rem;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.entrar {
+    border: none;
+    background: #b2dffc;
+    padding: 7px;
+    width: 17rem;
+}
+
+.loginbox p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #9c9c9c;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.loginbox p::before,
+.loginbox p::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 100px;
+    background: #dfdfdf;
+    position: relative;
+    vertical-align: middle
+}
+
+.loginbox p::before {
+    right: 1.7rem;
+    margin-left: -50%;
+}
+
+.loginbox p::after {
+    left: 1.7rem;
+    margin-right: -50%;
+}
+
+.facebook {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-decoration: none;
+    color: #3b5998;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.facebook img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.esqueceu-senha {
+    text-decoration: none;
+    color: #154872;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.criar-conta {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    width: 22rem;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.criar-conta a {
+    text-decoration: none;
+    color: #4797f6;
+    font-weight: 500;
+}
+
+.obter-aplicativo {
+    margin: 20px 20px;
+    font-size: 14px;
+}
+
+.download img {
+    width: 140px;
+}
+
+.phonebox img {
+    width: 400px;
+}
+
+@media (max-width: 875px) {
+    .phonebox {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .loginbox,
+    .criar-conta {
+        background: transparent;
+        border: none;
+    }
+    
+    .flex-container {
+        position: relative;
+        bottom: 5rem;
+    }
+}
